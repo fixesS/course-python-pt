@@ -24,8 +24,17 @@ div.hero {
     align-items: center;
     margin: 0 auto;
 }
+div.subtitle {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: 0 auto ;
+    margin-top: 40px;
+    margin-bottom:10px;
+    border-bottom: 1px solid rgba(22, 49, 82, 0.5);
+    width:800px;
+}
 ul {
-
     margin-bottom:25px;
 }
 li{
@@ -43,8 +52,13 @@ p.source{
     font-size:13px;
 }
 img{
-border-radius: 10px;
-margin-bottom:40px;}
+    border-radius: 10px;
+    margin-bottom:40px;
+    }
+img.shadow{
+box-shadow: 0px 0px 23px 3px rgba(84, 84, 84, 0.2);
+}
+
 img.skill-img {
     display: block;
     margin-left: auto;
@@ -79,11 +93,42 @@ div.sidenav a {
     font-weight:700;
     color: #818181;
     display:block;
-    text-align:center;
+    text-align:start;
 }
-
+div.sidenav a.active{
+    font-size:20px;
+    color: #525050;
+}
 div.sidenav a:hover{
     font-weight:400;
     font-size:20px;
     color:#163152;
+}
+div.dynamic{
+    display:flex;
+    justify-content:start;
+    align-items: center;
+}
+table {
+      margin-right:20px;
+      border-collapse: collapse;
+      width:60%;
+    }
+th, td {
+    text-align: left; /* Выравнивание текста в ячейках по левому краю */
+    padding: 6px; /* Отступы внутри ячеек */
+    border-bottom: 1px solid #ddd; /* Разделительные линии между строками */
+    border-left:1px solid #ddd;
+    border-right:1px solid #ddd;
+}
+th {
+    background-color: #f2f2f2; /* Цвет фона заголовков */
+}
+div.imgs{
+margin:20px;
+width:600px;
+}
+
+section.dynamic{
+    margin-left:50px;
 }
