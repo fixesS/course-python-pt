@@ -1,2 +1,7 @@
 .idea
 /course_proj/migrations
+/course_proj/course_proj/migrations/
+__pycache__/
+*.py[cod]
+*$py.class
+course_proj/course_proj/__pycache__/

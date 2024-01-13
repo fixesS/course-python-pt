@@ -19,3 +19,30 @@ class StatisticYearOnlyVac(models.Model):
         db_table = "stat_year_only_vac"
     pass
 
+class StatisticCitySalary(models.Model):
+    city = models.CharField("Город", max_length=100)
+    salary_avg = models.IntegerField("Средняя з/п")
+    class Meta:
+        db_table = "stat_city_salary"
+    pass
+
+class StatisticCitySalaryOnlyVac(models.Model):
+    city = models.CharField("Город",max_length=100)
+    salary_avg = models.IntegerField("Средняя з/п")
+    class Meta:
+        db_table = "stat_city_salary_only_vac"
+    pass
+
+class StatisticCityPercent(models.Model):
+    city = models.CharField("Город",max_length=100)
+    percent = models.FloatField("Процент вакансий")
+    class Meta:
+        db_table = "stat_city_percent"
+    pass
+
+class StatisticCityPercentOnlyVac(models.Model):
+    city = models.CharField("Город",max_length=100)
+    percent = models.FloatField("Процент вакансий")
+    class Meta:
+        db_table = "stat_city_percent_only_vac"
+    pass
