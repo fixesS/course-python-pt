@@ -46,3 +46,21 @@ class StatisticCityPercentOnlyVac(models.Model):
     class Meta:
         db_table = "stat_city_percent_only_vac"
     pass
+
+class StatisticSkillsByYearOnlyVac(models.Model):
+    skill = models.CharField("Навык", max_length=100)
+    number = models.IntegerField("Количество упоминаний")
+    year = models.IntegerField("Год")
+
+    class Meta:
+        db_table = "stat_skill_by_year"
+    pass
+
+class StatisticSkillsByYear(models.Model):
+    skill = models.CharField("Навык", max_length=100)
+    number = models.IntegerField("Количество упоминаний")
+    year = models.IntegerField("Год")
+
+    class Meta:
+        db_table = "stat_skill_by_year_only_vac"
+    pass

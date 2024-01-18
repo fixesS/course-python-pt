@@ -24,11 +24,13 @@
 	    </div>
         <main>
             <section class="dynamic all">
-                <div class="subtitle">
+                <div class="subtitle border">
                     <h2>Статистика по городам для всех вакансий</h2>
                 </div>
-                <div class="dynamic all  ">
-                    <table>
+                <div class="dynamic area">
+                    <div class="table-container">
+                        <table class = "margin">
+                            <h3>Таблица средней з/п от города</h3>
                         <thead >
                             <tr>
                                 <th class="year">Город</th>
@@ -44,7 +46,10 @@
                             {% endfor %}
                         </tbody>
                     </table>
-                    <table>
+                    </div>
+                    <div class="table-container">
+                        <table class = "margin">
+                            <h3>Таблица процента вакансий от города</h3>
                         <thead >
                             <tr>
                                 <th class="year">Город</th>
@@ -60,17 +65,23 @@
                             {% endfor %}
                         </tbody>
                     </table>
+                    </div>
+
                     <div class="imgs">
+                        <h3>График средней з/п от города</h3>
                         <img class="avg_salary shadow" src="static/imgs/avg_city.png" alt="img" width="550" height="340">
+                        <h3>График процента вакансий от города</h3>
                         <img class="count shadow" src="static/imgs/percent_city.png" alt="img" width="550" height="340">
                     </div>
 
                 </div>
-                <div class="subtitle">
+                <div class="subtitle border">
                     <h2>Статистика по городам только для вакансии Java-программист</h2>
                 </div>
-                <div class="dynamic vac ">
-                    <table>
+                <div class="dynamic area ">
+                    <div class="table-container">
+                        <table class = "margin">
+                            <h3>Таблица средней з/п от города</h3>
                         <thead >
                             <tr>
                                 <th class="year">Город</th>
@@ -86,7 +97,10 @@
                             {% endfor %}
                         </tbody>
                     </table>
-                    <table>
+                    </div>
+                    <div class="table-container">
+                        <table class = "margin">
+                            <h3>Таблица процента вакансий от города</h3>
                         <thead >
                             <tr>
                                 <th class="year">Город</th>
@@ -102,8 +116,11 @@
                             {% endfor %}
                         </tbody>
                     </table>
+                    </div>
                     <div class="imgs">
+                        <h3>График средней з/п от города</h3>
                         <img class="avg_salary shadow" src="static/imgs/avg_city_java.png" alt="img" width="550" height="340">
+                        <h3>График процента вакансий от города</h3>
                         <img class="count shadow" src="static/imgs/percent_city_java.png" alt="img" width="550" height="340">
                     </div>
                 </div>

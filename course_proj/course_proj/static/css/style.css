@@ -22,7 +22,11 @@ div.hero {
     display: flex;
     justify-content:space-evenly;
     align-items: center;
-    margin: 0 auto;
+
+}
+img.hero-img{
+position:relative;
+top:20px;
 }
 div.subtitle {
     display: flex;
@@ -31,8 +35,15 @@ div.subtitle {
     margin: 0 auto ;
     margin-top: 40px;
     margin-bottom:10px;
-    border-bottom: 1px solid rgba(22, 49, 82, 0.5);
     width:800px;
+}
+div.subtitle.border {
+    border-bottom: 1px solid rgba(22, 49, 82, 0.5);
+}
+div.subtitle.vac {
+    width:1200px;
+    margin: 0 ;
+
 }
 ul {
     margin-bottom:25px;
@@ -84,6 +95,7 @@ div.sidenav {
     overflow-x: :hidden;
     padding-top:20px;
     border-right: 1px solid rgba(22, 49, 82, 0.5);
+
 }
 
 div.sidenav a {
@@ -96,24 +108,55 @@ div.sidenav a {
     text-align:start;
 }
 div.sidenav a.active{
+    margin-left:10px;
     font-size:20px;
     color: #525050;
 }
 div.sidenav a:hover{
+    margin-left:0;
     font-weight:400;
     font-size:20px;
     color:#163152;
 }
 div.dynamic{
     display:flex;
-    justify-content:start;
+    justify-content:center;
     align-items: center;
+    padding:15px;
+}
+div.dynamic.skills{
+    display:flex;
+    justify-content:start;
+    align-items: start;
+    overflow-y: hidden;
+    padding:15px;
+    border: 1px solid #818181;
+}
+div.dynamic.area{
+    display:flex;
+    justify-content:center;
+    align-items: start;
+    padding:15px;
 }
 table {
-      margin-right:20px;
       border-collapse: collapse;
-      width:60%;
+      width:100%;
     }
+table.margin{
+    margin-right:20px;
+}
+.table-container {
+    display: grid;
+    place-items: center;
+    width:60%;
+}
+.table-container.skills {
+
+    margin-right:20px;
+    display: grid;
+    place-items: center;
+}
+
 th, td {
     text-align: left; /* Выравнивание текста в ячейках по левому краю */
     padding: 6px; /* Отступы внутри ячеек */
@@ -125,10 +168,43 @@ th {
     background-color: #f2f2f2; /* Цвет фона заголовков */
 }
 div.imgs{
-margin:20px;
-width:600px;
+    display: grid;
+    place-items: center;
+    margin:20px;
+    width:600px;
 }
 
 section.dynamic{
     margin-left:50px;
 }
+ul.vac {
+
+    list-style:none;
+    display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+div.vacancy{
+    padding: 25px;
+    background-color: #F7F7FA;
+}
+div.vacancy.p{
+    margin:0;
+    padding:0;
+}
+h4.vacname{
+    margin:0;
+    font-size:20px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+p.vacdate{
+    margin:0;
+    display: flex;
+    justify-content: end;
+    align-items: start;
+}
+
+

@@ -24,11 +24,13 @@
 	    </div>
         <main>
             <section class="dynamic all">
-                <div class="subtitle">
+                <div class="subtitle border">
                     <h2>Динамика по годам для всех вакансий</h2>
                 </div>
                 <div class="dynamic all  ">
-                    <table>
+                    <div class="table-container">
+                        <table class = "margin">
+                            <h3>Таблица средней зарплаты и количества вакансий от года</h3>
                         <thead >
                             <tr>
                                 <th class="year">Год    </th>
@@ -46,17 +48,23 @@
                             {% endfor %}
                         </tbody>
                     </table>
+                    </div>
+
                     <div class="imgs">
+                        <h3>График средней зарплаты от года</h3>
                         <img class="avg_salary shadow" src="static/imgs/avg.png" alt="img" width="550" height="340">
+                        <h3>График количества вакансий от года</h3>
                         <img class="count shadow" src="static/imgs/count.png" alt="img" width="550" height="340">
                     </div>
 
                 </div>
-                <div class="subtitle">
+                <div class="subtitle border">
                     <h2>Динамика по годам только для вакансий Java-программиста</h2>
                 </div>
                 <div class="dynamic vac ">
-                    <table>
+                    <div class="table-container">
+                        <table class = "margin">
+                            <h3>Таблица средней зарплаты и количества вакансий от года</h3>
                         <thead >
                             <tr>
                                 <th class="year">Год</th>
@@ -74,8 +82,11 @@
                             {% endfor %}
                         </tbody>
                     </table>
+                    </div>
                     <div class="imgs">
+                        <h3>График средней зарплаты от года</h3>
                         <img class="avg_salary shadow" src="static/imgs/avg_java.png" alt="img" width="550" height="340">
+                        <h3>График количества вакансий от года</h3>
                         <img class="count shadow" src="static/imgs/count_java.png" alt="img" width="550" height="340">
                     </div>
                 </div>
