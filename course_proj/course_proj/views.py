@@ -43,8 +43,6 @@ def skill_page(request):
     for year, group in data_statskill_vac_grouped:
         grouped_lists_vac[year] = list(group)
 
-    print(grouped_lists)
-
     return render(request, "skills.html",
                   {
                       'data_statskill': grouped_lists,
